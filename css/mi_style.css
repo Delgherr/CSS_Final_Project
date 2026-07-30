@@ -1,0 +1,184 @@
+body{
+    margin: 0 auto;
+}
+
+header{
+    background-size: cover;
+    background-position:center;
+}
+
+.imagen_main{
+    position:relative;
+    width:100%;
+    
+}
+
+.imagen_main img{
+    width:100%;
+    height: 300px;
+    object-fit:cover;
+}
+
+.nombre_cine{
+    position:absolute;
+    color:white;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    font-family:system-ui, sans-serif, Arial;
+    text-align:center;
+    font-size:50px;
+    text-shadow:5px 3px black;
+    letter-spacing:8px;
+}
+
+
+nav{
+    background-color:#1C1C1C;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:20px;
+    display:flex;
+    align-items:center;
+}
+
+nav img{
+    width:50px;
+    margin-left:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#FFD700;
+}
+
+nav a:hover{
+    color:white;
+}
+
+nav ul{
+    list-style-type:none;
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    flex-wrap:wrap;
+} 
+
+.skip-link{
+    position:absolute;
+    left:-1000px;
+    top:-100px;
+}
+
+.skip-link:focus{
+    left:10px;
+    top:10px;
+}
+
+h2{
+  font-family: sans-serif,Arial, Helvetica;
+  text-align:center;
+  font-size:xx-large;
+  line-height:60px;
+  color:#181616;
+}
+
+p{
+  color:#272626;
+  font-size:20px;
+  font-family:'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+  text-align:center;
+}
+
+.nosotros li{
+  color:#272626;
+  font-size:20px;
+  font-family:'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+  text-align:center;
+  list-style: square;
+}
+
+.Cartelera{
+    display:grid;
+    grid-template-columns:250px 250px;
+    justify-content:center;
+    column-gap: 300px;
+}
+
+.portada{
+    width:250px;
+    height:350px;
+    border:5px solid lightgray;
+    object-fit:cover;
+    border-radius:15px;
+    padding:10px;
+}
+
+.portada:hover{
+    transition-property:width;
+    transition-duration:.1s;
+    width:255px;
+    border:5px solid rgb(42, 39, 39);
+    border-radius:15px;
+}
+
+.titulo{
+    font-family:'Segoe UI', Arial, sans-serif;
+    font-size:22px;
+    font-weight:700;
+    color:#1C1C1C;
+    text-align:center;
+    margin-top:15px;
+    margin-bottom:5px;
+}
+
+.clasificacion{
+    background-color: #FFD700;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight:bold;
+}
+
+.menu h3{
+    color: #272626;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:xx-large;
+    text-align: center;
+}
+
+.productos{
+    display:flex;
+    width:100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:200px;
+    justify-content:center;
+}
+
+.producto img{
+    width:250px;
+    height:250px;
+    background-color: white;
+    border: 10px solid lightgray;
+    border-radius: 15px;
+    object-fit:cover;
+    padding:10px;
+} 
+
+.producto img:hover{
+    width:250px;
+    height:250px;
+    background-color: white;
+    border: 10px solid black;
+    border-radius: 15px;
+    object-fit:cover;
+}
+.producto p{ 
+  font-size:22px; 
+  font-weight:bold; 
+  color:#1C1C1C; 
+}
+
+.pelicula:nth-child(even):hover .portada{
+    border-color:#e30303;
+}
